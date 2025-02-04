@@ -1,13 +1,44 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
-    color: white;
-  }
-  h1 {
-    text-align: center;
-    margin-top: 0;
-    padding: 10px;
-    background-color: #333;
-  }
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+#top-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  padding: 10px;
+}
+
+#tabs {
+  display: flex;
+  background-color: #333;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.tab {
+  background-color: #444;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #007acc;
+}
+
+button {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#editor-container {
+  padding: 10px;
+}

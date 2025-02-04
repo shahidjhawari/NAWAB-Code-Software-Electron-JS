@@ -8,7 +8,21 @@
   <script src="renderer.js" defer></script>
 </head>
 <body>
-  <h1>Simple Code Editor</h1>
-  <div id="editor" style="height: 90vh; width: 100%;"></div>
+  <!-- Top Menu for Tabs and Buttons -->
+  <div id="top-menu">
+    <div id="tabs">
+      <div class="tab active" data-file="file1">File 1</div>
+      <div class="tab" data-file="file2">File 2</div>
+      <button id="newTab">New Tab</button>
+      <button id="importFile">Import File</button>
+      <button id="exportFile">Export File</button>
+      <button id="themeSwitcher">Switch Theme</button>
+    </div>
+  </div>
+
+  <!-- Editor Container for Monaco -->
+  <div id="editor-container">
+    <div id="editor" style="height: 80vh; width: 100%;"></div>
+  </div>
 </body>
 </html>
