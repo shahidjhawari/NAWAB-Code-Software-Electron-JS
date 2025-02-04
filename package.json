@@ -3,10 +3,23 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder"
   },
   "devDependencies": {
-    "electron": "^latest",
-    "monaco-editor": "^latest"
+    "electron": "25.3.0",
+    "monaco-editor": "0.39.0",
+    "electron-builder": "24.6.0"
+  },
+  "build": {
+    "appId": "com.simplecodeeditor.app",
+    "productName": "Simple Code Editor",
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    }
   }
 }
